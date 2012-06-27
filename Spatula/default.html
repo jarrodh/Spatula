@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Spatula</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- Spatula references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/extendedSplash.js"></script>
+</head>
+<body>
+    <div id="extendedSplashScreen" class="extendedSplashScreen hidden">
+        <img id="extendedSplashImage" src="#" />
+        <!--<progress id="extendedSplashProgress" style="color: black;" class="win-medium win-ring"></progress>-->
+        <progress id="extendedSplashProgress" style="color: #DB0066;" class="win-medium win-ring"></progress>
+        <div id="extendedSplashDescription">
+            <span id="extendedSplashText" style="color: #DB0066;">Please be patient getting the latest articles.</span>
+        </div>
+    </div>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/groupedItems/groupedItems.html'}"></div>
+    <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}"></button>
+    </div> -->
+</body>
+</html>
